@@ -1,0 +1,332 @@
+html{
+    font-size: 100%;
+}
+*{
+    margin: 0;
+    padding:0;
+    max-width: 100%;
+    font-family: "shabnam";
+}
+@font-face{
+    font-family: "shabnam";
+    src: url("./Shabnam/shabnam/Shabnam.woff2") format("woff2");
+}
+:root{
+    --1:#fff5e4;
+    --2:#90d1ca;
+    --3:#129990;
+    --4:#096b68;
+    --5:#ffa725;
+    --6:#c1d8c3;
+}
+body{
+    background-color:#fdeac8;
+}
+.navbar{
+    background-color:#096b68;
+    height: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10000000;
+}
+.titer{
+    color: #a8a59e;
+    font-size: 1.9rem;
+    margin-left:.5rem ;
+    align-self: center;
+    text-shadow: 2px 1.6px black;
+    font-family: none;
+    flex-grow: 2;
+}
+
+.a{
+    align-self: center;
+    margin-right: .5rem;
+    font-size: 1.3rem;
+    background-color: #ffa725;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+    
+}
+.picture{
+    margin-top: .8rem;
+    width: 100%;
+    height: 18rem;
+    background-image: linear-gradient(45deg, #1c7ab8, #064947 );
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.m{
+    font-size: .8rem;
+    margin-left: 0;
+    padding-left: 0.2rem;
+    padding-right: .2rem;
+}
+.m:hover{
+    cursor: pointer;
+}
+.m:active{
+    transform: scale(.9);
+    transition: all 400ms;
+}
+
+.pic1{
+    opacity: .3;
+    width: 100%;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+.pic2{
+    opacity: .3;
+    max-width: 100%;
+    transform: scaleX(-1);
+}
+.three{
+    position:absolute;
+    height: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+.kingdoms,.persons{
+    margin: 1rem .8rem 0 0;
+    font-size: 1.6rem;
+    padding-right: 1.2rem;
+    position: relative;
+}
+.kingdoms::before,.persons::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #ffa725;
+    border-radius: 4rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+}
+.kingdomsmother,.personsmother{
+    background-color: #c1d8c3;
+    width: 95%;
+    margin: .5rem 2.5% 0 2.5%;
+    border-radius: .5rem;
+}
+.kingdomname{
+    margin: .5rem .8rem 0 0 ;
+    display: block;
+    border-bottom: solid black;
+    border-width: 1px;
+    font-size: 1.3rem;
+    padding: .4rem;
+    padding-right: 1.2rem;
+    position: relative;
+}
+.kingdomname::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #064947;
+    border-radius: 4rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+}
+.kingdomname::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border-right: solid black;
+    border-bottom: solid black ;
+    border-width: 1px;
+    transform: rotate(45deg);
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    margin-right: .4rem;
+    transition: all 300ms;
+}
+.kingdomname:hover{
+    cursor: pointer;
+}
+.kingdomname.rotate::after{
+    transform: rotate(225deg);
+    transition: transform 300ms;
+}
+.kingdomcontent,.kingdomcontentl{
+    width: 100%;
+    height: 15rem;
+    background-image: linear-gradient(45deg, #1c7ab8, #064947 );
+    display: flex;
+    justify-content: space-between;
+    transition: all 500ms;
+    overflow-y: hidden;
+}
+
+.hidden{
+    display: none;
+    transition: display 300ms;
+}
+.heigtz{
+    height: 0;
+    overflow-y: hidden;
+    transition: all 500ms;
+}
+
+.kingdomtext{
+    align-self: center;
+    text-align: justify;
+    padding-right: 1rem;
+    padding-left: .3rem;
+    color: #fff5e4;
+}
+.general{
+    width: 95%;
+    height: 24rem;
+    margin: 1rem 2.5% 0 2.5%;
+    border-radius: .5rem;
+    background-color: white;
+    padding: .4rem;
+    gap: .4rem;
+    overflow-y: hidden;
+    display: flex;
+
+
+}
+.map{
+    border-radius: .4rem;
+}
+.history{
+    align-self: center;
+    text-align: justify;
+    direction: rtl;
+    font-size: .9rem;
+}
+footer{
+    margin-top: 2rem;
+    width: 100%;
+    height: 8rem;
+    background-color: #11354d;
+    display: flex;
+    justify-content: center;
+}
+.end{
+    align-self: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #a8a59e;
+}
+.chap{
+    display: flex;
+    direction: rtl;
+    justify-content: flex-start;
+    flex: 0 0 auto;
+    gap: .2rem;
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width:600px){
+    .kingdomcontentl{
+        width: 100%;
+        height: 10rem;
+        background-image: linear-gradient(45deg, #1c7ab8, #064947 );
+        display: flex;
+        justify-content: space-between;
+        transition: all 500ms;
+        overflow-y: hidden;
+    }
+    
+    .hidden{
+        display: none;
+        transition: display 300ms;
+    }
+    .heigtz{
+        height: 0;
+        overflow-y: hidden;
+        transition: all 500ms;
+    }
+    
+    .kingdomtext{
+        align-self: center;
+        text-align: justify;
+        padding-right: 1rem;
+        padding-left: .3rem;
+        color: #fff5e4;
+    }
+    .pic2{
+        display: none;
+    }
+    .three{
+        left:-2rem;
+        transform: scale(.6);
+    }
+    .a{
+        transform: scale(.7);
+    }
+    .titer{
+        font-size: 1.3rem;
+    }
+    .flag{
+        width: 57%;
+        height: 57%;
+        align-self: center;
+    }
+    .kingdomtext{
+        font-size: .55rem;
+    }
+    .general{
+        flex-direction: column;
+        height: auto;
+        font-size: .8rem;
+    }
+    .d{
+        font-size: .8rem;
+    }
+    .m:active{
+        transform: scale(.6);
+        transition: all 400ms;
+    }
+    .map{
+        width:70% ;
+        height:70% ;
+        align-self: center;
+    }
+    
+    
+}
+@media all and (max-width:900px){
+    .map{
+        width:60% ;
+        height:60% ;
+        align-self: center;
+    }
+    .general{
+        flex-direction: column;
+        height: auto;
+        font-size: .8rem;
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
