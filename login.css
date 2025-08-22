@@ -8,7 +8,7 @@ html{
 }
 @font-face{
     font-family: "shabnam";
-    src: url("./Shabnam/shabnam/Shabnam.woff2") format("woff2");
+    src: url("./Shabnam.woff2") format("woff2");
 }
 :root{
     --1:#fff5e4;
@@ -160,5 +160,6 @@ input{
         transition: all 1000ms;
     }
 }
+
 
 
